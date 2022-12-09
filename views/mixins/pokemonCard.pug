@@ -1,0 +1,36 @@
+mixin pokemonCard(pokemon)
+    div(class=`card ${pokemon.class}`)
+        div.card-header
+            div.card-title=pokemon.name
+            div.card-hp=pokemon.hp
+            div.img-type
+                img.card-type-image(src=pokemon.icon)
+        div.img
+            img.card-header-image(src=pokemon.image)
+        div.card-body
+            div.first-move
+                div.row
+                    img.energy-image(src=pokemon.secondicon)
+                    p=pokemon.move
+                    p=pokemon.damage
+            div.second-move
+                div.row
+                    div.image-row
+                        img.energy-image(src=pokemon.thirdicon)
+                        img.energy-image(src=pokemon.fourthicon)
+                    p=pokemon.secondmove
+                    p=pokemon.seconddamage
+            div.deatils
+                div.row
+                    p=pokemon.weakness
+                    p=pokemon.resistance
+                    p=pokemon.retreat
+            div.more-details
+                div.row
+                    div.image-row
+                        img.energy-image(src=pokemon.weaknessicon)
+                        p=pokemon.weaknessamount
+                    img.energy-image(src=pokemon.resistanceicon)
+                    img.energy-image(src=pokemon.retreaticon)
+            div.edit
+                a(href=`/edit/${pokemon.id}`) Edit

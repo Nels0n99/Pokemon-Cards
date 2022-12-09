@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f3f4f6;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  padding: 48px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card.fire {
+  background: rgba(255, 69, 0, 0.62);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card-header-image {
+  display: flex;
+  background-color: white;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 5px;
+}
+
+.card-title {
+  font-size: 22px;
+  top: 24px;
+  left: 24px;
+}
+
+.card-body {
+  padding: 24px;
+  color: #111827;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.image-type {
+  background-color: black;
+}
+
+.card-type-image {
+  width: 25px;
+  height: 25px;
+}
+
+.card-hp {
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.first-move {
+  border-bottom-style: solid;
+  margin-bottom: 10px;
+}
+
+.second-move {
+  border-bottom-style: solid;
+  margin-top: 10px;
+}
+
+.energy-image {
+  width: 20px;
+  height: 20px;
+}
+
+.image-row{
+  display: flex;
+  align-items: center;
+}
+
+.card.water{
+  background: rgba(0, 207, 255, 0.37);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.normal{
+  background: rgba(0, 0, 0, 0.31);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.grass{
+  background: rgba(139, 255, 0, 0.31);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.fairy{
+  background: rgba(255, 0, 133, 0.31);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.dark{
+  background: rgba(0, 0, 0, 0.64);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+

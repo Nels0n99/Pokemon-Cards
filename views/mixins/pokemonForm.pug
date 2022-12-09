@@ -1,0 +1,57 @@
+mixin pokemonForm(pokemon, actionURL, mode, title)
+
+block content
+    div.form-panel
+        div.header= title
+            form(action= ctionURL method='post')
+                div.form-input
+                    label(for='type') Pokemon Type:
+                    input(type='text' id='type' name='type' value=pokemon.class)
+                div.form-input
+                    label(for='name') Name:
+                    input(type='text' id='name' name='name' value=pokemon.name)
+                div.form-input
+                    label(for='hp') HP:
+                    input(type='text' id='hp' name='hp' value=pokemon.hp)
+                div.form-input
+                    label(for='icon') Type Icon URL:
+                    input(type='text' id='icon' name='icon' value=pokemon.icon)
+                div.form-input
+                    label(for='image') Pokemon Image URL:
+                    input(type='text' id='image' name='image' value=pokemon.image)
+                div.form-input
+                    label(for='energy') Energy For Move:
+                    input(type='text' id='energy' name='energy' value=pokemon.secondicon)
+                div.form-input
+                    label(for='move') Move Name:
+                    input(type='text' id='move' name='move' value=pokemon.move)
+                div.form-input
+                    label(for='damage') Damage Amount:
+                    input(type='text' id='damage' name='damage' value=pokemon.damage)
+                div.form-input
+                    label(for='thirdicon') Energy For Second Move:
+                    input(type='text' id='thirdicon' name='thirdicon' value=pokemon.thirdicon)
+                div.form-input
+                    label(for='fourthicon') Second Energy for Move:
+                    input(type='text' id='fourthicon' name='fourthicon' value=pokemon.fourthicon)
+                div.form-input
+                    label(for='secondmove') Second Move:
+                    input(type='text' id='secondmove' name='secondmove' value=pokemon.secondmove)
+                div.form-input
+                    label(for='seconddamage') Damage For Second Move:
+                    input(type='text' id='seconddamage' name='seconddamage' value=pokemon.seconddamage)
+                div.form-input
+                    label(for='weaknessicon') Icon For Weakness URL:
+                    input(type='text' id='weaknessicon' name='weaknessicon' value=pokemon.weaknessicon)
+                div.form-input
+                    label(for='resistanceicon') Icon For Resistance URL:
+                    input(type='text' id='resistanceicon' name='resistanceicon' value=pokemon.resistanceicon)
+                div.form-input
+                    label(for='retreaticon') Icon For Reatreat Energy URL:
+                    input(type='text' id='retreaticon' name='retreaticon' value=pokemon.retreaticon)
+                div.button-row
+                    a.button.cancel(href='/') Cancel
+                    if (mode==='edit')
+                        a.button.delete(href=`/delete/${pokemon.id}`) Delete
+                    button.button.save(type='submit') Submit
+
