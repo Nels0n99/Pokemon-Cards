@@ -1,9 +1,8 @@
 mixin pokemonForm(pokemon, actionURL, mode, title)
 
-block content
     div.form-panel
         div.header= title
-            form(action= ctionURL method='post')
+            form(action= actionURL method='post')
                 div.form-input
                     label(for='type') Pokemon Type:
                     input(type='text' id='type' name='type' value=pokemon.class)
@@ -43,6 +42,9 @@ block content
                 div.form-input
                     label(for='weaknessicon') Icon For Weakness URL:
                     input(type='text' id='weaknessicon' name='weaknessicon' value=pokemon.weaknessicon)
+                div.form-input
+                    label(for='weaknessamount') Weakness Amount:
+                    input(type='text' id='weaknessamount' name='weaknessamount' value=pokemon.weaknessamount)
                 div.form-input
                     label(for='resistanceicon') Icon For Resistance URL:
                     input(type='text' id='resistanceicon' name='resistanceicon' value=pokemon.resistanceicon)

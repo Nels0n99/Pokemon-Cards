@@ -90,8 +90,36 @@ body {
   align-items: center;
 }
 
+.button {
+  display: block;
+  border-radius: 6px;
+  padding: 8px 16px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  font-size: 14px;
+  line-height: 1.25rem;
+}
+
+.button.save {
+  background: #155E75;
+  color: white;
+  border: 1px solid #164E63;
+}
+
+.add-button-row{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-header{
+  background: #242323;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .card.water{
-  background: rgba(0, 207, 255, 0.37);
+  background: rgba(0, 78, 255, 0.59);
   border-style: solid;
   border-color: yellow;
   border-width: 10px;
@@ -135,3 +163,110 @@ body {
   width: 350px;
 }
 
+.card.psychic{
+  background: rgba(92, 31, 155, 0.45);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.ice{
+  background: rgba(0, 137, 168, 0.42);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.electric{
+  background: rgba(255, 247, 34, 0.45);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.dragon{
+  background: rgba(255, 126, 0, 0.45);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.flying{
+  background: rgba(109, 79, 50, 0.47);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.fighting{
+  background: rgba(127, 50, 0, 0.7);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.poison{
+  background: rgba(154, 27, 155, 0.45);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.rock{
+  background: rgba(48, 17, 0, 0.47);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.ground{
+  background: rgba(48, 18, 0, 0.65);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.bug{
+  background: rgba(96, 155, 0, 0.45);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.ghost{
+  background: rgba(52, 0, 155, 0.45);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
+
+.card.steel{
+  background: rgba(96, 91, 93, 0.76);
+  border-style: solid;
+  border-color: yellow;
+  border-width: 10px;
+  border-radius: 16px;
+  width: 350px;
+}
